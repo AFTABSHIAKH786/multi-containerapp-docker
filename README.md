@@ -6,7 +6,6 @@ This project demonstrates how to mount a host volume to Docker services, specifi
 - `server/`: Node.js Express API for managing books in a PostgreSQL database.
 - `pgdata/`: Host-mounted directory for PostgreSQL data files.
 - `docker-compose.yml`: Docker Compose configuration for services.
-- `app-logs/`: Directory for application logs.
 
 ## How to Use
 
