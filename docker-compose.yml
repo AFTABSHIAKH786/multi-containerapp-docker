@@ -8,8 +8,8 @@ services:
       POSTGRES_PASSWORD: postgres 
       POSTGRES_DB: testdb
     volumes:
-      - db-data:/var/postgres/data
-      
+      - ./pgdata:/var/lib/postgresql/data
+
   api:
     build: ./server
     ports: 
@@ -21,6 +21,3 @@ services:
       DB_USER: postgres
       DB_PASSWORD: postgres
       DB_NAME: testdb
-
-volumes:
-  db-data: 
