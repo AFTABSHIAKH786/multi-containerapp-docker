@@ -4,6 +4,8 @@ const { Client } = require("pg");
 const app = express();
 app.use(express.json());
 
+const fs = require('fs');
+fs.appendFileSync('./logs/app.log', 'API server started\n');
 
 const clientConfig = {
   host: "db",
